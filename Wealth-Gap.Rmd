@@ -13,9 +13,11 @@ Each collaborator should make a different change -- make a line plot, add color,
 home_owner <- read.csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-09/home_owner.csv')
 
 # Load library
-# Your code here
+library(tidyverse)
+library(dplyr)
 
 # Make a line plot of the percentage of homeowners for racial categories over time
+
 # and color the plot by racial category
 
 # Your code here

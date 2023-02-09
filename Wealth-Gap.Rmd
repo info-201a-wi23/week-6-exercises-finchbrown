@@ -10,12 +10,17 @@ Here's a report about homeownership trends over time for different racial groups
 Each collaborator should make a different change -- make a line plot, add color, or hide the code.
 
 ```{r}
-home_owner <- read.csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-09/home_owner.csv')
+home_owner <- read.csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-09/home_owner.csv', stringsAsFactors = FALSE)
 
 # Load library
-# Your code here
+
+library(tidyverse)
 
 # Make a line plot of the percentage of homeowners for racial categories over time
+
+ggplot(data = home_owner) +
+  geom_line(aes(x = year, y = home_owner_pct))
+
 # and color the plot by racial category
 
 # Your code here
